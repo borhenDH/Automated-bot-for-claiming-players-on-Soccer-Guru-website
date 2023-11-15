@@ -1,2 +1,2 @@
-# Accepting-friend-request-Facebook
-Automated script for accepting friend requests on Facebook
+# Automated Script for Reward Redemption on Soccer Guru Platform
+Automated Script for Reward Redemption on Soccer Guru Platform
