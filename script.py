@@ -6,7 +6,11 @@ from selenium.webdriver.support.wait import WebDriverWait
 import pandas as pd
 
 import time
+from dotenv import load_dotenv
+import os
 
+# Load environment variables from .env
+load_dotenv()
 
 PATH = r"C:\Program Files (x86)\msedgedriver"
 service = Service(PATH)
@@ -23,9 +27,9 @@ except:
 try:
 
     email_box = container.find_element(By.XPATH, '/html/body/div[2]/div[2]/div[1]/div[1]/div/div/div/div/form/div[2]/div/div[1]/div[2]/div[1]/div/div[2]/input')
-    email_box.send_keys("bdahech08@gmail.com")
+    email_box.send_keys(os.getenv("login"))
     mdp_box = container.find_element(By.XPATH, '/html/body/div[2]/div[2]/div[1]/div[1]/div/div/div/div/form/div[2]/div/div[1]/div[2]/div[2]/div/input')
-    mdp_box.send_keys("borhen69!")
+    mdp_box.send_keys(os.getenv("password"))
     email_box.submit()
 
 except:
