@@ -125,10 +125,10 @@ def login(driver, login, password):
         try:
             button = button_container.find_element(By.CSS_SELECTOR,'#app-mount > div.appAsidePanelWrapper__714a6 > div.notAppAsidePanel__9d124 > div.app_b1f720 > div > div > div > div > div > div.footer__04ee2 > button.button_afdfd9.lookFilled__19298.colorBrand_b2253e.sizeMedium_c6fa98.grow__4c8a4')
             button.click()
-          
+            
         except:
             print("button not found")
-                
+        time.sleep(10)   
     except:
         print("inputs not found")
 
@@ -140,6 +140,7 @@ def claim_reward(driver):
         claim = WebDriverWait(driver, 15).until(
             EC.presence_of_element_located((By.CSS_SELECTOR,"#__nuxt > div > div.flex-grow > div > div > div.flex.flex-col.gap-4.px-4.md\:px-8 > div:nth-child(3) > div:nth-child(1) > a"))
             )
+        time.sleep(5)
         claim.click()
        
     except:
