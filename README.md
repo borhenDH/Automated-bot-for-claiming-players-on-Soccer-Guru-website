@@ -1,7 +1,7 @@
-# Soccer Guru Discord Bot
+# Soccer Guru automated Bot
 
 ## Overview
-The Soccer Guru Discord Bot is a script that automates the process of claiming player rewards on the Soccer Guru game website. The bot is designed to be scheduled to run every hour, ensuring that players receive their rewards regularly.
+The Soccer Guru automated Bot is a script that automates the process of claiming player rewards on the Soccer Guru game website. The bot is designed to be scheduled to run every hour, ensuring that players receive their rewards regularly.
 
 ## Features
 - **Automated Reward Claiming**: The bot automates the login process and claims player rewards on the Soccer Guru website.
